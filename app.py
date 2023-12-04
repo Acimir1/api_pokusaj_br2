@@ -37,7 +37,7 @@ import requests
 class MyHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/submit':
-            # Your logic here
+            print("Success!")
             return
         self.send_response(404)
         self.end_headers()
